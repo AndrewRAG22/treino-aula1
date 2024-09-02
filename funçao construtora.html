@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Criar objeto
+        function Carro(){
+            this.marca="Marca";
+            this.preco= 0;
+        }
+        const honda= new Carro();
+        honda.marca="Honda";
+        honda.preco=244000;
+        const fiat=new Carro();
+        fiat.marca="Nissan";
+        fiat.preco=12000;
+
+        //inteirar objeto
+        let Carro={
+            portas:4,
+            rodas:4,
+            marca:"Um carro",
+            Avenda:true
+        };
+        for (let detalhes in Carro){
+            console.log(detalhes+":"+Carro[detalhes]);
+        }
+    </script>
+</body>
+</html>
